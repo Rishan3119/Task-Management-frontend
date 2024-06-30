@@ -1,4 +1,4 @@
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import AllTasks from './pages/AllTasks';
@@ -34,6 +34,7 @@ function App() {
         </Route>
         <Route path='/signup' element={<Signup/>} />
         <Route path='/login' element={<Login/>} />
+        <Route path='/*' element={<Navigate to={'/'}/>} />
       </Routes>
      </div>
    
