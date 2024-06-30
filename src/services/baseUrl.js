@@ -1,0 +1,1 @@
+export const BASE_URL = "https://task-management-backend-q94l.onrender.com"
